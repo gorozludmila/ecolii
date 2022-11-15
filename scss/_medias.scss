@@ -1,0 +1,517 @@
+// Pantallas extra pequeñas (móviles) < 576px.
+// Pantallas pequeñas (_sm, tablets _en vertical) ≥ 576px.
+// Pantallas medianas (md, para tablets en horizontal) ≥ 768px.
+// Pantallas grandes (lg, tamaño escritorio) ≥ 992px.
+// Pantallas extra grandes (xl, escritorio grande) ≥ 1200px.
+
+
+/*TAMAÑO CELULAR*/
+
+
+@media (max-width: 576px){
+
+    /*-------------------------------------HEADER----------------------------------------------------------*/
+    header{
+        nav{
+        .ulinicio{
+            position:fixed;
+            width: 100%;
+            height: 100vh;
+            background: $colorMenu;
+            top: 80px;
+            left: 100%;
+            text-align: center;
+            transition: all 0.5s ease;
+        li{
+            display: block;
+            margin: 40px 0px;
+            margin-bottom: 5%;
+            line-height: 30px;
+        a{
+           font-size: 20px;
+           transition: all 0.3s ease;
+            &:hover{
+                background-color: rgb(56, 163, 165);
+                transition: all  0.5s ease;
+            }
+            
+        }
+    
+    }
+    }
+    .check1 {
+        display: block;
+      }
+      
+      #check:checked ~ul{
+        left: 0;
+    }
+}
+    }
+        /*-----carrusel---*/
+        .carousel{
+            display: none;
+            }
+
+
+/*---------------------MAIN DEL INDEX--------------------*/
+
+.mainIndex{
+
+    .contenedor{
+   
+        .info{  /*TITULO H2*/
+            @include tituloCelular;
+        }
+        div{
+        .imagenes22{
+            height: 100px;
+            width:  100px;
+        }
+        .propaganda{
+            font-size: 20px;      
+            padding: 10px;
+        }        
+    }
+    }
+}
+    /*ESTILO PAGINA REGISTRARSE Y INISIO SECION*/
+
+    .iniciarSesion{
+        width: 300px;
+        padding: 20px;
+    
+        h1{
+           @include tituloCelular;
+        }
+        .label{
+            height: 20px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .controlador{
+            padding: 8px;
+            font-size: 10px;
+        }
+        .boton{
+            padding: 8px;
+            margin: 12px 0;
+            font-size: 12px;
+        }
+        .texto{
+            height: 20px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+/*--------------------------------------------QUIENES SOMOS---------------------------------------------*/
+
+
+.mainquienessomos{
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .contenedor{
+        .info{
+            @include tituloCelular;
+        }
+        .p-quienesomos{
+           
+            @include parrafoCelular;
+        }
+    }
+
+}
+
+/*-------------------------------------------PREGUNTAS FRECUENTES.------------------------------------------------*/
+
+.mainpreguntasfrecuentes{
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    line-height: 20px;
+
+    h1{
+        @include tituloCelular;
+    }
+
+    .preguntasfrecuentes{
+        padding: 20px;
+        line-height: 15px;
+        .lipreguntas{
+            font-size: 12px;
+            line-height: 12px;
+           
+            }
+            p{
+                font-size: 10px;
+                margin-top: 3px;
+                margin-bottom: 20px;
+            }
+    }    
+    }
+
+/*------------------------------------------------------------PRODUCTOS-----------------------------------------------*/
+.mainproductos{
+
+   
+    .h2productos{
+        @include tituloCelular;
+    }
+    .mainproductos{
+        max-width: 900px;
+        padding: 10px;
+        .card{
+            width: 40%;
+            margin: 25px;
+            padding: 3px;
+            border-radius: 6px;
+            box-shadow: none;
+
+            .textoP{
+                font-size: 7px;
+                padding: 5px;
+            }
+        }
+
+    }
+}
+
+/*-------------------------------------------------------------FOOTER------------------------------------------------*/
+footer{
+    text-align: center;
+    padding: 40px;
+    *{
+        flex: 1 100%;
+    }
+    h4{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .sociales{  /*div 1*/
+        margin-left: 15%;
+        a{
+            width: 20px;
+            height: 20px;
+            i{
+                color: $colorFondo;
+                padding: 10px 12px;
+                font-size: 15px;
+                
+            }
+        }
+    
+    }
+    .linea {
+     
+        margin: 15px auto 0 auto;
+     
+    }
+
+.footer-listas{
+  
+    display: flex;
+    flex-wrap: wrap;
+ 
+  
+    *{
+        flex: 2 60%;
+        margin-right: 0.5em;
+    }
+  
+    .ayuda{
+  
+        a{
+            font-size: 12px;
+        }
+    }
+    .encontranosEn{
+    
+        a{
+            font-size: 12px;
+        }
+    }
+    .informacionLegal{ 
+        .box{
+            li{
+             
+                margin-right: 5px;
+             
+                img{
+                width: 20px;
+                height: 20px;
+                }
+            }
+        }
+    }
+}
+    .finPagina{
+    
+        p{
+            font-size: 10px;
+        }
+    }
+}
+
+}
+
+
+
+/*PARA TABLET*/
+@media (max-width: 992px) and (min-width: 577px){
+/*@media (max-width: 577px) and (max-width: 992px){*/
+
+      /*-------------------------------------HEADER----------------------------------------------------------*/
+      header{
+        nav{
+        .ulinicio{
+            position:fixed;
+            width: 100%;
+            height: 100vh;
+            background: $colorMenu;
+            top: 80px;
+            left: 100%;
+            text-align: center;
+            transition: all 0.5s ease;
+        li{
+            display: block;
+            margin: 40px 0px;
+            margin-bottom: 5%;
+            line-height: 30px;
+        a{
+           font-size: 20px;
+           transition: all 0.3s ease;
+            &:hover{
+                background-color: rgb(56, 163, 165);
+                transition: all  0.5s ease;
+            }
+            
+        }
+    
+    }
+    }
+    .check1 {
+        display: block;
+      }
+      
+      #check:checked ~ul{
+        left: 0;
+    }
+}
+    }
+
+    //--------------------------------------------------------------------
+     /*-----carrusel---*/
+     .carousel{
+        display: none;
+        }
+
+
+/*---------------------MAIN DEL INDEX--------------------*/
+
+.mainIndex{
+
+.contenedor{
+
+    .info{  /*TITULO H2*/
+        @include tituloTablet;
+    }
+    div{
+    .imagenes22{
+        height: 125px;
+        width:  125px;
+    }
+    .propaganda{
+        font-size: 25px;      
+        padding: 15px;
+    }        
+}
+}
+}
+/*ESTILO PAGINA REGISTRARSE Y INISIO SECION*/
+
+.iniciarSesion{
+    width: 400px;
+    padding: 20px;
+
+    h1{
+        @include tituloTablet;
+
+    }
+    .label{
+        height: 20px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .controlador{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .boton{
+        padding: 10px;
+        margin: 15px 0;
+        font-size: 15px;
+    }
+    .texto{
+        height: 20px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+
+
+
+/*--------------------------------------------QUIENES SOMOS---------------------------------------------*/
+
+
+.mainquienessomos{
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .contenedor{
+        .info{
+            @include tituloTablet;
+        }
+        .p-quienesomos{
+           
+            @include parrafoTablet;
+        }
+    }
+
+}
+
+/*-------------------------------------------PREGUNTAS FRECUENTES.------------------------------------------------*/
+
+.mainpreguntasfrecuentes{
+    padding: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    line-height: 23px;
+
+    h1{
+        @include tituloTablet;
+    }
+
+    .preguntasfrecuentes{
+        padding: 30px;
+        line-height: 20px;
+        .lipreguntas{
+            font-size: 20px;
+            line-height: 15px;
+            font-weight: 700;
+           
+            }
+            p{
+               font-size: 15px;
+               
+                margin-top: 5px;
+                margin-bottom: 25px;
+            }
+    }    
+    }
+
+/*------------------------------------------------------------PRODUCTOS-----------------------------------------------*/
+.mainproductos{
+
+   
+    .h2productos{
+        @include tituloTablet;
+    }
+    .mainproductos{
+        max-width: 1000px;
+        padding: 12px;
+        .card{
+            
+            margin: 20px;
+            padding: 5px;
+        
+            .textoP{
+                font-size: 10px;
+                padding: 5px;
+            }
+        }
+
+    }
+}
+
+
+/*-------------------------------------------------------------FOOTER------------------------------------------------*/
+footer{
+    text-align: center;
+    padding: 40px;
+    *{
+        flex: 1 100%;
+    }
+    h4{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .sociales{  /*div 1*/
+        margin-left: 12%;
+        a{
+            width: 30px;
+            height: 30px;
+            i{
+                padding: 10px 12px;
+                font-size: 12px;
+            }
+        }
+    
+    }
+    .linea {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+.footer-listas{
+  
+    display: flex;
+    flex-wrap: wrap;
+  
+   h5{
+    font-size: 15px;
+   }
+    *{
+        flex: 1 20%;
+        margin-right: 0.4em;
+    }
+  
+    .ayuda{
+      
+        a{
+            font-size: 10px;
+        }
+    
+    }
+    .encontranosEn{
+   
+        a{
+            font-size: 10px;
+        }
+        
+    }
+    .informacionLegal{
+    
+        .box{
+            li{
+             
+                margin-right: 4px;
+             
+                img{
+                width: 15px;
+                height: 15px;
+                }
+            }
+        }
+    }
+}
+    .finPagina{
+    
+        p{
+            font-size: 10px;
+        }
+    }
+}
+}

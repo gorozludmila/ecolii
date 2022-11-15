@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+@mixin titulo {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: $colorTitulos;
+    animation: 3s;
+    animation-name: tituloo;
+    animation-iteration-count: 0.5s;
+}
+
+@mixin tituloCelular{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+} 
+@mixin tituloTablet{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+}
+@mixin parrafoCelular{
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+}
+@mixin parrafoTablet{
+    font-size: 20px;
+    font-weight: 150;
+    text-align: center;
+}
+
+@import "variables";
+
+.bodyy{
+    background-color: $colorFondo;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    
+/*-----------------HEADER---------------*/
+@import "header";
+
+/*---------------------MAIN DEL INDEX--------------------*/
+
+.mainIndex{
+    background-color: $colorContenedor;
+    border: $bordes;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    @keyframes tituloo {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 2;
+        }
+        
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      
+        .info{  /*TITULO H2*/
+           @include titulo;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        .imagenes22{
+            height: 200px;
+            width:  200px;
+        }
+        .propaganda{
+            font-size: 30px;  
+            text-align: center;    
+            color: $colorTextoParrafos;
+            padding: 20px;
+        }        
+    }
+    }
+}
+
+/*------------FOOTER-------*/
+@import "footer";
+
+/*------INICIO SESION - REGISTRARSE --------*/
+@import "inisioRegistrarse";
+
+/*------------PRODUCTOS-------------------*/
+@import "productos";
+
+
+/*-------------------------PREGUNTAS FRECUENTES -------------------------*/
+
+.mainpreguntasfrecuentes{
+    width: 80%;
+    height: 80%;
+    background-color: $colorContenedor;
+    font-size: 20px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+   
+  
+
+    h1{
+        @include titulo;
+    }
+
+    .preguntasfrecuentes{
+        @include anclas;
+        list-style: none;
+        .lipreguntas{
+
+            height: 40px;
+            text-align: left;
+            font-weight: 700;
+            line-height: 20px;
+            color: $colorTextoParrafos;
+          
+            }
+        }
+        p{
+            color: $colorTextoParrafos;
+            margin-bottom: 20px;
+  
+        }
+    }
+
+/*--------------------------QUIENES SOMOS---------------------------*/
+.mainquienessomos{
+    width: 80%;
+    height: 80%;
+    background-color: $colorContenedor;
+    font-size: 20px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    .contenedor{
+        .info{
+            @include titulo;
+        }
+        .p-quienesomos{
+            color: $colorTextoParrafos;
+            font-size: 18px;
+            padding: 40px;
+        }
+    }
+
+}
+
+@import "medias";
+
+ 

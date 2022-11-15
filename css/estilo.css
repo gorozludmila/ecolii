@@ -1,0 +1,648 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; /*para que los elementos no se salgan*/
+
+}
+.bodyy{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(128, 237, 153);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* min-width: 100vh; */
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}  
+
+
+.imagenCarrusel{
+    width: 100%;
+    position: center;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+@media (max-width: 1075px ){
+.imagenCarrusel{
+    margin-left: 0;
+}
+    
+}
+/*---------------------------------------MENU---------------------------------------------*/
+
+.navmenu{
+    background: rgb(34, 87, 122);
+    height: 80px;
+    width: 100%;
+    right: 0;
+}
+.inicio{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+    margin-right: 0;
+}
+.ulinicio{
+    float: right;
+    margin-right: 20px;
+}
+.ulinicio li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  
+}
+.ulinicio li >a{
+    text-decoration: none;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 7px 13px;
+    
+}
+.ulinicio li a:hover{
+    background-color: rgb(56, 163, 165); /*Le doy color cuando se acerca*/
+    transition: .5s;
+}
+
+.check1{
+    font-size: 30px;
+    color: blanchedalmond;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none; /*solo para el celular*/
+
+}
+#check{
+    display: none; 
+}  
+
+
+
+
+/*-----------------------------MAIN DEL INDEX----------------------*/
+
+.info{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(25, 69, 99);
+    animation: 3s;
+    animation-name: tituloo;
+    animation-iteration-count: infinite;
+}
+@keyframes tituloo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 2;
+    }
+    
+}
+.contenedor{
+    width: 90%;
+    background-color: rgb(199, 249, 204);
+    border: 5px solid  rgb(34, 87, 122);
+    padding: 30px;
+    border-radius: 4px; 
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 7%;
+    
+    display: flex;
+    flex-direction: column;     
+} 
+
+.propaganda{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(87, 204, 153);
+    padding: 10px;
+}
+.imagenPropaganda{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+ 
+  
+}
+
+.imagenes22{
+    height: 200px;
+    width:  200px;
+    
+}
+/*------------------------------------INICIO SESIÓN --- REGISTRARSE--------------------------------------*/
+h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:  rgb(34, 87, 122);
+    animation: 4s;
+    animation-name: tituloo;
+    animation-iteration-count: infinite;
+}
+
+.iniciarSesion{
+    width: 400px;
+    background-color: rgb(199, 249, 204);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+   
+}
+.iniciarSesion .controlador{
+    width: 100%;
+    background: rgb(86, 201, 113); ;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px;
+    font-size: 18px;
+}
+.label{ 
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: rgb(34, 87, 122);
+
+}
+.iniciarSesion .texto{
+    height: 40px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 40px;
+    color: rgb(34, 87, 122);
+}
+.iniciarSesion .boton{
+    width: 100%;
+    background: rgb(25, 69, 99);
+    border: none;
+    padding: 12px;
+    color:  rgb(87, 204, 153);
+    margin: 16px 0;
+    font-size: 16px;
+}
+/*------------------------------------------QIENES SOMOS-----------------------------------------------*/
+
+.mainquienessomos{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(199, 249, 204);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    
+}
+.p-quienessomos{
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    color:  rgb(87, 204, 153); 
+}
+/*-----------------------------------PREGUNTAS FRECUENTES------------------------------------------------*/
+.mainpreguntasfrecuentes{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(149, 213, 178);
+    font-size: 20px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 40px;
+}
+.preguntasfrecuentes{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(25, 69, 99);
+}
+.lipreguntas{
+    height: 40px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 40px;
+    color: rgb(34, 87, 122);
+    padding: 40px;
+    margin: auto;
+
+}
+/*----------------------------------------PRODUCTOS---------------------------------------------------------------*/
+.h2productos{
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(25, 69, 99); 
+    
+}
+
+.mainproductos{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 1400px;
+    padding: 20px;
+    justify-content: center;
+   
+}
+
+.card {
+    width: 40%;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgb(199, 249, 204);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+   
+}
+
+.card:hover{
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.imgproductos{
+    width: 100%;
+    height: 90%;
+   
+}
+.textoP{
+   
+    font-size: 15px;
+    width: 100%; 
+    background: rgb(25, 69, 99);
+    color: rgb(86, 201, 113) ;
+    margin-top: 5%;
+    padding: 10px;
+   
+} 
+
+
+/*-------------------------------------FOOTER---------------------------------------------------------*/
+footer{
+    background: rgb(34, 87, 122);
+    width: 100%;
+    margin-top: auto;
+    
+    padding: auto;
+}
+ .h4footer{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(87, 204, 153); 
+}
+.foter{
+    background: rgb(34, 87, 122);
+    list-style: none;
+    align-self: flex ;
+    width: 100%;
+  
+
+}
+.fotter{  /*ayuda-encontranos en*/
+    font-size: 20px;
+    color: rgb(87, 204, 153);
+    display: inline-flex;
+    margin-inline: 6%; 
+}
+.preguntasFrecuentes{
+    margin-inline: 6%;
+    margin-left: 6%;
+}
+.preguntasFrecuentes a:hover{
+    background-color: rgb(128, 237, 153); /*Le doy color cuando se acerca*/
+}
+.preguntasFrecuentes >a{
+    text-decoration: none;
+    color:  rgb(87, 204, 153);
+    font-size: 15px;
+}
+.quienesSomos{
+    display: inline-flex;
+    margin-inline: 1.8%;
+    margin-left: 6%;
+    color: rgb(87, 204, 153);
+}
+.quienesSomos >a{
+    text-decoration: none;
+    color:  rgb(87, 204, 153);
+    font-size: 15px;
+}
+.quienesSomos a:hover{
+    background-color: rgb(128, 237, 153); /*Le doy color cuando se acerca*/
+}
+
+
+
+/*lista de lo que esta abajo de ayuda*/
+.lista2 a{ 
+    list-style: none;
+    text-align: left;
+    color: rgb(87, 204, 153);
+}
+.foterInformacion{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.lista4horizontal{
+    display: inline-block;
+    list-style: none;
+    justify-content: space-evenly;
+    color: rgb(87, 204, 153);
+    
+}
+.Imagenfoter{
+    
+    top: 10px;
+    bottom: 10px;
+    height: 50px;
+    width:  50px;
+    justify-content: space-around;
+
+}
+.insta{
+    width: 50px;
+    height: 50px;
+    background: rgb(87, 204, 153); 
+    border: none;
+    border-radius: 50px;
+    margin: center center;
+  
+}
+.instagram2{
+    height: 50px;
+    width:  50px; 
+    margin: center center;
+    
+}
+.linea {
+    border-top: 2px solid  rgb(87, 204, 153); 
+    height: 2px;
+    max-width: 90%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+.findepag{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(87, 204, 153); 
+    
+}  
+
+
+
+
+/*----------------------------------------------PARA CELULAR--------------------------------------------------*/
+@media (max-width: 480px ){ /*DEBERIA REGIR PARA 320px y 480px tambien */
+   
+/*----------MENU---------*/
+   .check1{
+    display: block;
+   
+   }
+
+    .ulinicio{
+        position: absolute;
+        width: 100%;
+        /* height: 100vh; */
+        background: rgb(34, 87, 122);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: .5s;
+        
+    }
+    .ulinicio li{
+      
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    .ulinicio li >a{
+        font-size: 20px;
+    }
+    .ulinicio li a:hover{
+        background: none;
+        color: rgb(25, 69, 99);
+    }
+    #check:checked ~ul{
+        left: 0;
+       
+    }
+    /*-----carrusel---*/
+    .carousel{
+    display: none;
+    }
+    /*------------------------------------------MAIN DEL INDEX---------------------*/
+
+
+    .info{
+        text-align: center;
+        font-size: 25px;
+        animation: none;
+    }
+   .contenedor {
+        padding: 5px;
+        overflow: auto;
+      
+   }
+    .contenedor .propaganda{
+        font-size: 7px;
+        padding: 5px;
+    }
+    .contenedor .imagenes22{
+        display: none;
+    }
+    /*  ----------------------------------QUIENES SOMOS -------------------*/
+    .mainquienessomos{
+        height: 500px;
+        font-size: 10px;
+        overflow: auto;
+    }
+    .p-quienessomos{
+        font-weight: lighter;
+    }
+    /*-------------------------------PREGUNTAS FRECUENETS -----------------------------*/
+    .mainpreguntasfrecuentes{
+        font-size: 10px;
+        padding: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 20px;
+        overflow: auto;
+    }
+
+    .lipreguntas{
+        font-size: 13px;
+        line-height: 10px;
+        
+    }
+    /*------------------------------------------------------PRODUCTOS---------*/
+    .h2productos{
+        font-size: 30px;
+    }
+    .textoP{
+        font-size: 10px;
+        padding: 8px;
+    } 
+
+    /*-----------------------------------------------------------FOOTER--------------------------------------------*/
+
+    .h4footer{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .linea{
+        margin: 8px auto 0 auto;
+    }
+    .fotter{ /*ayuda-encontranos en*/
+
+        font-size: 10px;
+        display: inline-block;
+
+    }
+
+    .preguntasFrecuentes >a{
+        font-size: 8px;
+    }
+    .quienesSomos{
+        font-size: 8px;
+    }
+    .quienesSomos >a{
+        font-size: 8px;
+    }
+    .horizontal {
+        font-size: 10px;
+       
+    }
+    
+    .lista2 a{  
+      
+        font-size: 10px;
+       
+    }
+    .Imagenfoter{
+        height: 25px;
+        width:  25px;
+    }
+    .insta{
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+    }
+    .instagram2{
+        height: 27px;
+        width:  27px; 
+    }    
+    .findepag{
+        font-size: 10px;
+       
+    } 
+}
+
+@media (max-width: 768px){  /*PARA TABLET*/
+
+    /*-----MENU------*/
+
+
+    .check1{
+        display: block;
+       
+       }
+    
+    .ulinicio{
+        position: fixed;           
+        width: 100%;
+        height: 100vh;
+        background: rgb(34, 87, 122);            top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: .5s;
+}   
+.ulinicio li{ 
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+.ulinicio li >a{
+    font-size: 20px;
+ }
+.ulinicio li a:hover{
+    background: none;
+    color: rgb(86, 201, 113); 
+}
+#check:checked ~ul{
+left: 0;
+ }
+/*-----carrusel---*/
+.carousel{
+    display: none;
+ }
+
+    /*----MAIN DEL INDEX*/
+    .info{
+        font-size: 25px;
+        animation: none;
+    }
+
+    .contenedor {
+     
+        padding: 5px;
+      
+   }
+    .contenedor .propaganda{
+        font-size: 20px;
+        padding: 3px;
+    }
+    .contenedor .imagenes22{
+        width: 150px;
+        height: 150px;
+        top: 10px;
+        bottom: 10px;
+        margin-left: 75px;
+    }
+    /*----PREGUNTAS FRECUENTES------*/
+    .lipreguntas{
+       
+        line-height: 15px;        
+    }
+    .lipreguntas >li{
+        padding: 10px;
+    }
+    /*------------PRODUCTOS---------*/
+ 
+    .h2productos{
+        font-size: 30px;
+    }
+ 
+}
