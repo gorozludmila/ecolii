@@ -160,11 +160,11 @@
         @include tituloCelular;
     }
     .mainproductos{
-        max-width: 900px;
+        max-width: 1000px;
         padding: 10px;
         .card{
-            width: 40%;
-            margin: 25px;
+       
+            margin: 10px;
             padding: 3px;
             border-radius: 6px;
             box-shadow: none;
@@ -173,9 +173,13 @@
                 font-size: 7px;
                 padding: 5px;
             }
+        
         }
 
-    }
+    }   
+
+
+       
 }
 
 /*-------------------------------------------------------------FOOTER------------------------------------------------*/
@@ -185,9 +189,10 @@ footer{
     *{
         flex: 1 100%;
     }
-    h4{
+    .h2footer{
         font-size: 15px;
         font-weight: 400;
+        
     }
     .sociales{  /*div 1*/
         margin-left: 15%;
@@ -260,7 +265,7 @@ footer{
 
 /*PARA TABLET*/
 @media (max-width: 992px) and (min-width: 577px){
-/*@media (max-width: 577px) and (max-width: 992px){*/
+
 
       /*-------------------------------------HEADER----------------------------------------------------------*/
       header{

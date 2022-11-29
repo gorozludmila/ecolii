@@ -1,10 +1,12 @@
 /*------------------------FOOTER----------------*/
 
 footer{
+    text-align: center;
     background-color: $colorMenu;
     color: $colorFondo;
     padding: 50px;
-    h4{
+    .h2footer{
+        font-size: 30px;
         text-align: center;
     }
     *{
@@ -13,7 +15,7 @@ footer{
     .sociales{  /*div 1*/
       
        display: inline-block; 
-       margin-left: 45%;
+   
         a{
             width: 40px;
             height: 40px;

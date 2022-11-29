@@ -124,11 +124,13 @@ header #check {
 /*------------FOOTER-------*/
 /*------------------------FOOTER----------------*/
 footer {
+  text-align: center;
   background-color: rgb(34, 87, 122);
   color: rgb(128, 237, 153);
   padding: 50px;
 }
-footer h4 {
+footer .h2footer {
+  font-size: 30px;
   text-align: center;
 }
 footer * {
@@ -136,7 +138,6 @@ footer * {
 }
 footer .sociales { /*div 1*/
   display: inline-block;
-  margin-left: 45%;
 }
 footer .sociales a {
   width: 40px;
@@ -281,7 +282,7 @@ footer .finPagina p {
   background-color: rgb(128, 237, 153);
   border: none;
 }
-.mainproductos .h2productos {
+.mainproductos .h1productos {
   font-size: 50px;
   font-weight: 700;
   text-align: center;
@@ -530,12 +531,11 @@ footer .finPagina p {
     text-align: center;
   }
   .mainproductos .mainproductos {
-    max-width: 900px;
+    max-width: 1000px;
     padding: 10px;
   }
   .mainproductos .mainproductos .card {
-    width: 40%;
-    margin: 25px;
+    margin: 10px;
     padding: 3px;
     border-radius: 6px;
     box-shadow: none;
@@ -552,7 +552,7 @@ footer .finPagina p {
   footer * {
     flex: 1 100%;
   }
-  footer h4 {
+  footer .h2footer {
     font-size: 15px;
     font-weight: 400;
   }
@@ -598,7 +598,6 @@ footer .finPagina p {
 }
 /*PARA TABLET*/
 @media (max-width: 992px) and (min-width: 577px) {
-  /*@media (max-width: 577px) and (max-width: 992px){*/
   /*-------------------------------------HEADER----------------------------------------------------------*/
   header nav .ulinicio {
     position: fixed;

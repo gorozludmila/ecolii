@@ -1,648 +1,773 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box; /*para que los elementos no se salgan*/
-
-}
-.bodyy{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: rgb(128, 237, 153);
-    padding: 0;
-    margin: 0;
-    display: flex;
-    /* min-width: 100vh; */
-    min-height: 100vh;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}  
-
-
-.imagenCarrusel{
-    width: 100%;
-    position: center;
-    margin-left: 2%;
-    margin-right: 2%;
-
-}
-@media (max-width: 1075px ){
-.imagenCarrusel{
-    margin-left: 0;
-}
-    
-}
-/*---------------------------------------MENU---------------------------------------------*/
-
-.navmenu{
-    background: rgb(34, 87, 122);
-    height: 80px;
-    width: 100%;
-    right: 0;
-}
-.inicio{
-    position: absolute;
-    padding: 20px 50px;
-}
-.logo{
-    height: 40px;
-    margin-right: 0;
-}
-.ulinicio{
-    float: right;
-    margin-right: 20px;
-}
-.ulinicio li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  
-}
-.ulinicio li >a{
-    text-decoration: none;
-    color: blanchedalmond;
-    text-transform: uppercase;
-    font-size: 18px;
-    padding: 7px 13px;
-    
-}
-.ulinicio li a:hover{
-    background-color: rgb(56, 163, 165); /*Le doy color cuando se acerca*/
-    transition: .5s;
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.check1{
-    font-size: 30px;
-    color: blanchedalmond;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display:none; /*solo para el celular*/
-
+.bodyy {
+  background-color: rgb(128, 237, 153);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-#check{
-    display: none; 
-}  
 
+/*-----------------HEADER---------------*/
+/*------------------------------------------------MENU------------------------------------------*/
+header {
+  background-color: rgb(34, 87, 122);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  height: 80px;
+  width: 100%;
+  right: 0;
+}
+header nav .logo {
+  margin-top: 20px;
+  margin-left: 3%;
+  height: 40px;
+}
+header nav .ulinicio {
+  float: right;
+  margin-right: 20px;
+}
+header nav .ulinicio li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 px;
+}
+header nav .ulinicio li a {
+  text-decoration: none;
+  color: blanchedalmond;
+  font-size: 18px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header nav .ulinicio li a:hover {
+  background-color: rgb(56, 163, 165);
+  transition: 0.5s;
+}
+header .check1 {
+  font-size: 30px;
+  color: blanchedalmond;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  /*solo para el celular*/
+}
+header #check {
+  display: none;
+}
 
-
-
-/*-----------------------------MAIN DEL INDEX----------------------*/
-
-.info{
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: rgb(25, 69, 99);
-    animation: 3s;
-    animation-name: tituloo;
-    animation-iteration-count: infinite;
+/*---------------------MAIN DEL INDEX--------------------*/
+.mainIndex {
+  background-color: rgb(199, 249, 204);
+  border: 5px solid rgb(34, 87, 122);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 @keyframes tituloo {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 2;
-    }
-    
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
 }
-.contenedor{
-    width: 90%;
-    background-color: rgb(199, 249, 204);
-    border: 5px solid  rgb(34, 87, 122);
-    padding: 30px;
-    border-radius: 4px; 
-    margin-top: 20%;
-    margin-bottom: 20%;
-    margin-left: 7%;
-    
-    display: flex;
-    flex-direction: column;     
-} 
+.mainIndex .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mainIndex .contenedor .info { /*TITULO H2*/
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(34, 87, 122);
+  animation: 3s;
+  animation-name: tituloo;
+  animation-iteration-count: 0.5s;
+}
+.mainIndex .contenedor div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mainIndex .contenedor div .imagenes22 {
+  height: 200px;
+  width: 200px;
+}
+.mainIndex .contenedor div .propaganda {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(34, 87, 122);
+  padding: 20px;
+}
 
-.propaganda{
-    text-align: center;
-    font-size: 30px;
-    color: rgb(87, 204, 153);
-    padding: 10px;
+/*------------FOOTER-------*/
+/*------------------------FOOTER----------------*/
+footer {
+  text-align: center;
+  background-color: rgb(34, 87, 122);
+  color: rgb(128, 237, 153);
+  padding: 50px;
 }
-.imagenPropaganda{
+footer .h2footer {
+  font-size: 30px;
+  text-align: center;
+}
+footer * {
+  flex: 1 100%;
+}
+footer .sociales { /*div 1*/
+  display: inline-block;
+}
+footer .sociales a {
+  width: 40px;
+  height: 40px;
+}
+footer .sociales a i {
+  color: rgb(128, 237, 153);
+  padding: 10px 12px;
+  font-size: 20px;
+}
+footer .linea {
+  border-top: 2px solid rgb(87, 204, 153);
+  height: 2px;
+  max-width: 95%;
+  padding: 0;
+  margin: 20px auto 0 auto;
+  margin-bottom: 10px;
+}
+footer .footer-listas {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: row wrap;
+}
+footer .footer-listas * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+footer .footer-listas .ayuda li {
+  text-decoration: none;
+  list-style: none;
+}
+footer .footer-listas .ayuda a {
+  font-size: 15px;
+  color: rgb(128, 237, 153);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+footer .footer-listas .ayuda a:hover {
+  background-color: rgb(199, 249, 204);
+  transition: 0.5s;
+}
+footer .footer-listas .encontranosEn li {
+  text-decoration: none;
+  list-style: none;
+}
+footer .footer-listas .encontranosEn a {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(128, 237, 153);
+  transition: all 0.3s ease;
+}
+footer .footer-listas .encontranosEn a:hover {
+  background-color: rgb(199, 249, 204);
+  transition: 0.5s;
+}
+footer .footer-listas .informacionLegal .box li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer-listas .informacionLegal .box li a {
+  color: rgb(128, 237, 153);
+}
+footer .footer-listas .informacionLegal .box li img {
+  width: 40px;
+  height: 40px;
+}
+footer .finPagina p {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/*------INICIO SESION - REGISTRARSE --------*/
+/*ESTILO PAGINA REGISTRARSE Y INISIO SECION*/
+.iniciarSesion {
+  width: 400px;
+  background-color: rgb(199, 249, 204);
+  padding: 30px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.iniciarSesion h1 {
+  font-size: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: rgb(34, 87, 122);
+  animation: 0.5s;
+  animation-name: tituloo;
+}
+.iniciarSesion .label {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  color: rgb(34, 87, 122);
+}
+.iniciarSesion .controlador {
+  width: 100%;
+  background: rgb(86, 201, 113);
+  border-color: rgb(86, 201, 113);
+  padding: 10px;
+  margin-bottom: 3%;
+  font-size: 18px;
+}
+.iniciarSesion .boton {
+  width: 100%;
+  background: rgb(34, 87, 122);
+  border-color: rgb(34, 87, 122);
+  padding: 12px;
+  color: rgb(87, 204, 153);
+  margin: 16px 0;
+  font-size: 16px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+.iniciarSesion .boton:hover {
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.iniciarSesion .texto {
+  height: 40px;
+  text-align: right;
+  font-size: 12px;
+  line-height: 40px;
+  color: rgb(34, 87, 122);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+.iniciarSesion .texto:hover {
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-4%);
+}
+
+/*------------PRODUCTOS-------------------*/
+.mainproductos {
+  background-color: rgb(128, 237, 153);
+  border: none;
+}
+.mainproductos .h1productos {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(34, 87, 122);
+  animation: 3s;
+  animation-name: tituloo;
+  animation-iteration-count: 0.5s;
+}
+.mainproductos .mainproductos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  padding: 20px;
+  justify-content: center;
+}
+.mainproductos .mainproductos .card {
+  width: 40%;
+  margin: 30px;
+  padding: 5px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgb(199, 249, 204);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+.mainproductos .mainproductos .card:hover {
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.mainproductos .mainproductos .card .imgproductos {
+  width: 100%;
+  height: 90%;
+}
+.mainproductos .mainproductos .card .textoP {
+  font-size: 15px;
+  width: 100%;
+  background: rgb(34, 87, 122);
+  color: rgb(86, 201, 113);
+  margin-top: 5%;
+  padding: 10px;
+}
+
+/*-------------------------PREGUNTAS FRECUENTES -------------------------*/
+.mainpreguntasfrecuentes {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(199, 249, 204);
+  font-size: 20px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+.mainpreguntasfrecuentes h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(34, 87, 122);
+  animation: 3s;
+  animation-name: tituloo;
+  animation-iteration-count: 0.5s;
+}
+.mainpreguntasfrecuentes .preguntasfrecuentes {
+  text-decoration: none;
+  color: blanchedalmond;
+  font-size: 18px;
+  padding: 7px 13px;
+  list-style: none;
+}
+.mainpreguntasfrecuentes .preguntasfrecuentes .lipreguntas {
+  height: 40px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(34, 87, 122);
+}
+.mainpreguntasfrecuentes p {
+  color: rgb(34, 87, 122);
+  margin-bottom: 20px;
+}
+
+/*--------------------------QUIENES SOMOS---------------------------*/
+.mainquienessomos {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(199, 249, 204);
+  font-size: 20px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+.mainquienessomos .contenedor .info {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(34, 87, 122);
+  animation: 3s;
+  animation-name: tituloo;
+  animation-iteration-count: 0.5s;
+}
+.mainquienessomos .contenedor .p-quienesomos {
+  color: rgb(34, 87, 122);
+  font-size: 18px;
+  padding: 40px;
+}
+
+/*TAMAÑO CELULAR*/
+@media (max-width: 576px) {
+  /*-------------------------------------HEADER----------------------------------------------------------*/
+  header nav .ulinicio {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(34, 87, 122);
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  header nav .ulinicio li {
+    display: block;
+    margin: 40px 0px;
+    margin-bottom: 5%;
+    line-height: 30px;
+  }
+  header nav .ulinicio li a {
+    font-size: 20px;
+    transition: all 0.3s ease;
+  }
+  header nav .ulinicio li a:hover {
+    background-color: rgb(56, 163, 165);
+    transition: all 0.5s ease;
+  }
+  header nav .check1 {
+    display: block;
+  }
+  header nav #check:checked ~ ul {
+    left: 0;
+  }
+  /*-----carrusel---*/
+  .carousel {
+    display: none;
+  }
+  /*---------------------MAIN DEL INDEX--------------------*/
+  .mainIndex .contenedor .info { /*TITULO H2*/
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .mainIndex .contenedor div .imagenes22 {
+    height: 100px;
+    width: 100px;
+  }
+  .mainIndex .contenedor div .propaganda {
+    font-size: 20px;
+    padding: 10px;
+  }
+  /*ESTILO PAGINA REGISTRARSE Y INISIO SECION*/
+  .iniciarSesion {
+    width: 300px;
+    padding: 20px;
+  }
+  .iniciarSesion h1 {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .iniciarSesion .label {
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .iniciarSesion .controlador {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .iniciarSesion .boton {
+    padding: 8px;
+    margin: 12px 0;
+    font-size: 12px;
+  }
+  .iniciarSesion .texto {
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  /*--------------------------------------------QUIENES SOMOS---------------------------------------------*/
+  .mainquienessomos {
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .mainquienessomos .contenedor .info {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .mainquienessomos .contenedor .p-quienesomos {
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+  }
+  /*-------------------------------------------PREGUNTAS FRECUENTES.------------------------------------------------*/
+  .mainpreguntasfrecuentes {
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    line-height: 20px;
+  }
+  .mainpreguntasfrecuentes h1 {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .mainpreguntasfrecuentes .preguntasfrecuentes {
+    padding: 20px;
+    line-height: 15px;
+  }
+  .mainpreguntasfrecuentes .preguntasfrecuentes .lipreguntas {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .mainpreguntasfrecuentes .preguntasfrecuentes p {
+    font-size: 10px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+  }
+  /*------------------------------------------------------------PRODUCTOS-----------------------------------------------*/
+  .mainproductos .h2productos {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .mainproductos .mainproductos {
+    max-width: 1000px;
+    padding: 10px;
+  }
+  .mainproductos .mainproductos .card {
+    margin: 10px;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: none;
+  }
+  .mainproductos .mainproductos .card .textoP {
+    font-size: 7px;
+    padding: 5px;
+  }
+  /*-------------------------------------------------------------FOOTER------------------------------------------------*/
+  footer {
+    text-align: center;
+    padding: 40px;
+  }
+  footer * {
+    flex: 1 100%;
+  }
+  footer .h2footer {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  footer .sociales { /*div 1*/
+    margin-left: 15%;
+  }
+  footer .sociales a {
+    width: 20px;
+    height: 20px;
+  }
+  footer .sociales a i {
+    color: rgb(128, 237, 153);
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+  footer .linea {
+    margin: 15px auto 0 auto;
+  }
+  footer .footer-listas {
     display: flex;
     flex-wrap: wrap;
-   justify-content: center;
- 
-  
-}
-
-.imagenes22{
-    height: 200px;
-    width:  200px;
-    
-}
-/*------------------------------------INICIO SESIÓN --- REGISTRARSE--------------------------------------*/
-h1{
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    color:  rgb(34, 87, 122);
-    animation: 4s;
-    animation-name: tituloo;
-    animation-iteration-count: infinite;
-}
-
-.iniciarSesion{
-    width: 400px;
-    background-color: rgb(199, 249, 204);
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 4px;
-   
-}
-.iniciarSesion .controlador{
-    width: 100%;
-    background: rgb(86, 201, 113); ;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px;
-    font-size: 18px;
-}
-.label{ 
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-    color: rgb(34, 87, 122);
-
-}
-.iniciarSesion .texto{
-    height: 40px;
-    text-align: right;
+  }
+  footer .footer-listas * {
+    flex: 2 60%;
+    margin-right: 0.5em;
+  }
+  footer .footer-listas .ayuda a {
     font-size: 12px;
-    line-height: 40px;
-    color: rgb(34, 87, 122);
+  }
+  footer .footer-listas .encontranosEn a {
+    font-size: 12px;
+  }
+  footer .footer-listas .informacionLegal .box li {
+    margin-right: 5px;
+  }
+  footer .footer-listas .informacionLegal .box li img {
+    width: 20px;
+    height: 20px;
+  }
+  footer .finPagina p {
+    font-size: 10px;
+  }
 }
-.iniciarSesion .boton{
+/*PARA TABLET*/
+@media (max-width: 992px) and (min-width: 577px) {
+  /*-------------------------------------HEADER----------------------------------------------------------*/
+  header nav .ulinicio {
+    position: fixed;
     width: 100%;
-    background: rgb(25, 69, 99);
-    border: none;
-    padding: 12px;
-    color:  rgb(87, 204, 153);
-    margin: 16px 0;
-    font-size: 16px;
-}
-/*------------------------------------------QIENES SOMOS-----------------------------------------------*/
-
-.mainquienessomos{
-    width: 500px;
-    height: 500px;
-    background-color: rgb(199, 249, 204);
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 4px;
-    
-}
-.p-quienessomos{
-    height: 40px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 40px;
-    color:  rgb(87, 204, 153); 
-}
-/*-----------------------------------PREGUNTAS FRECUENTES------------------------------------------------*/
-.mainpreguntasfrecuentes{
-    width: 80%;
-    height: 80%;
-    background-color: rgb(149, 213, 178);
-    font-size: 20px;
-    padding: 40px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 10px;
-    text-align: left;
-    line-height: 40px;
-}
-.preguntasfrecuentes{
-    list-style: none;
-    text-decoration: none;
-    color: rgb(25, 69, 99);
-}
-.lipreguntas{
-    height: 40px;
-    text-align: left;
-    font-weight: bold;
-    line-height: 40px;
-    color: rgb(34, 87, 122);
-    padding: 40px;
-    margin: auto;
-
-}
-/*----------------------------------------PRODUCTOS---------------------------------------------------------------*/
-.h2productos{
-    font-size: 50px;
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(25, 69, 99); 
-    
-}
-
-.mainproductos{
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; 
-    max-width: 1400px;
-    padding: 20px;
-    justify-content: center;
-   
-}
-
-.card {
-    width: 40%;
-    margin: 30px;
-    padding: 5px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: rgb(199, 249, 204);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
-   
-}
-
-.card:hover{
-    box-shadow: 20px 20px 40px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
-}
-
-.imgproductos{
-    width: 100%;
-    height: 90%;
-   
-}
-.textoP{
-   
-    font-size: 15px;
-    width: 100%; 
-    background: rgb(25, 69, 99);
-    color: rgb(86, 201, 113) ;
-    margin-top: 5%;
-    padding: 10px;
-   
-} 
-
-
-/*-------------------------------------FOOTER---------------------------------------------------------*/
-footer{
+    height: 100vh;
     background: rgb(34, 87, 122);
-    width: 100%;
-    margin-top: auto;
-    
-    padding: auto;
-}
- .h4footer{
-    font-size: 25px;
+    top: 80px;
+    left: 100%;
     text-align: center;
-    color: rgb(87, 204, 153); 
-}
-.foter{
-    background: rgb(34, 87, 122);
-    list-style: none;
-    align-self: flex ;
-    width: 100%;
-  
-
-}
-.fotter{  /*ayuda-encontranos en*/
-    font-size: 20px;
-    color: rgb(87, 204, 153);
-    display: inline-flex;
-    margin-inline: 6%; 
-}
-.preguntasFrecuentes{
-    margin-inline: 6%;
-    margin-left: 6%;
-}
-.preguntasFrecuentes a:hover{
-    background-color: rgb(128, 237, 153); /*Le doy color cuando se acerca*/
-}
-.preguntasFrecuentes >a{
-    text-decoration: none;
-    color:  rgb(87, 204, 153);
-    font-size: 15px;
-}
-.quienesSomos{
-    display: inline-flex;
-    margin-inline: 1.8%;
-    margin-left: 6%;
-    color: rgb(87, 204, 153);
-}
-.quienesSomos >a{
-    text-decoration: none;
-    color:  rgb(87, 204, 153);
-    font-size: 15px;
-}
-.quienesSomos a:hover{
-    background-color: rgb(128, 237, 153); /*Le doy color cuando se acerca*/
-}
-
-
-
-/*lista de lo que esta abajo de ayuda*/
-.lista2 a{ 
-    list-style: none;
-    text-align: left;
-    color: rgb(87, 204, 153);
-}
-.foterInformacion{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.lista4horizontal{
-    display: inline-block;
-    list-style: none;
-    justify-content: space-evenly;
-    color: rgb(87, 204, 153);
-    
-}
-.Imagenfoter{
-    
-    top: 10px;
-    bottom: 10px;
-    height: 50px;
-    width:  50px;
-    justify-content: space-around;
-
-}
-.insta{
-    width: 50px;
-    height: 50px;
-    background: rgb(87, 204, 153); 
-    border: none;
-    border-radius: 50px;
-    margin: center center;
-  
-}
-.instagram2{
-    height: 50px;
-    width:  50px; 
-    margin: center center;
-    
-}
-.linea {
-    border-top: 2px solid  rgb(87, 204, 153); 
-    height: 2px;
-    max-width: 90%;
-    padding: 0;
-    margin: 20px auto 0 auto;
-}
-
-.findepag{
-    font-size: 20px;
-    text-align: center;
-    color: rgb(87, 204, 153); 
-    
-}  
-
-
-
-
-/*----------------------------------------------PARA CELULAR--------------------------------------------------*/
-@media (max-width: 480px ){ /*DEBERIA REGIR PARA 320px y 480px tambien */
-   
-/*----------MENU---------*/
-   .check1{
+    transition: all 0.5s ease;
+  }
+  header nav .ulinicio li {
     display: block;
-   
-   }
-
-    .ulinicio{
-        position: absolute;
-        width: 100%;
-        /* height: 100vh; */
-        background: rgb(34, 87, 122);
-        top: 80px;
-        left: 100%;
-        text-align: center;
-        transition: .5s;
-        
-    }
-    .ulinicio li{
-      
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-
-    }
-    .ulinicio li >a{
-        font-size: 20px;
-    }
-    .ulinicio li a:hover{
-        background: none;
-        color: rgb(25, 69, 99);
-    }
-    #check:checked ~ul{
-        left: 0;
-       
-    }
-    /*-----carrusel---*/
-    .carousel{
-    display: none;
-    }
-    /*------------------------------------------MAIN DEL INDEX---------------------*/
-
-
-    .info{
-        text-align: center;
-        font-size: 25px;
-        animation: none;
-    }
-   .contenedor {
-        padding: 5px;
-        overflow: auto;
-      
-   }
-    .contenedor .propaganda{
-        font-size: 7px;
-        padding: 5px;
-    }
-    .contenedor .imagenes22{
-        display: none;
-    }
-    /*  ----------------------------------QUIENES SOMOS -------------------*/
-    .mainquienessomos{
-        height: 500px;
-        font-size: 10px;
-        overflow: auto;
-    }
-    .p-quienessomos{
-        font-weight: lighter;
-    }
-    /*-------------------------------PREGUNTAS FRECUENETS -----------------------------*/
-    .mainpreguntasfrecuentes{
-        font-size: 10px;
-        padding: 25px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        line-height: 20px;
-        overflow: auto;
-    }
-
-    .lipreguntas{
-        font-size: 13px;
-        line-height: 10px;
-        
-    }
-    /*------------------------------------------------------PRODUCTOS---------*/
-    .h2productos{
-        font-size: 30px;
-    }
-    .textoP{
-        font-size: 10px;
-        padding: 8px;
-    } 
-
-    /*-----------------------------------------------------------FOOTER--------------------------------------------*/
-
-    .h4footer{
-        font-size: 10px;
-        margin-bottom: 10px;
-    }
-    .linea{
-        margin: 8px auto 0 auto;
-    }
-    .fotter{ /*ayuda-encontranos en*/
-
-        font-size: 10px;
-        display: inline-block;
-
-    }
-
-    .preguntasFrecuentes >a{
-        font-size: 8px;
-    }
-    .quienesSomos{
-        font-size: 8px;
-    }
-    .quienesSomos >a{
-        font-size: 8px;
-    }
-    .horizontal {
-        font-size: 10px;
-       
-    }
-    
-    .lista2 a{  
-      
-        font-size: 10px;
-       
-    }
-    .Imagenfoter{
-        height: 25px;
-        width:  25px;
-    }
-    .insta{
-        width: 25px;
-        height: 25px;
-        border-radius: 10px;
-    }
-    .instagram2{
-        height: 27px;
-        width:  27px; 
-    }    
-    .findepag{
-        font-size: 10px;
-       
-    } 
-}
-
-@media (max-width: 768px){  /*PARA TABLET*/
-
-    /*-----MENU------*/
-
-
-    .check1{
-        display: block;
-       
-       }
-    
-    .ulinicio{
-        position: fixed;           
-        width: 100%;
-        height: 100vh;
-        background: rgb(34, 87, 122);            top: 80px;
-        left: 100%;
-        text-align: center;
-        transition: .5s;
-}   
-.ulinicio li{ 
-    display: block;
-    margin: 50px 0;
+    margin: 40px 0px;
+    margin-bottom: 5%;
     line-height: 30px;
-}
-
-.ulinicio li >a{
+  }
+  header nav .ulinicio li a {
     font-size: 20px;
- }
-.ulinicio li a:hover{
-    background: none;
-    color: rgb(86, 201, 113); 
-}
-#check:checked ~ul{
-left: 0;
- }
-/*-----carrusel---*/
-.carousel{
+    transition: all 0.3s ease;
+  }
+  header nav .ulinicio li a:hover {
+    background-color: rgb(56, 163, 165);
+    transition: all 0.5s ease;
+  }
+  header nav .check1 {
+    display: block;
+  }
+  header nav #check:checked ~ ul {
+    left: 0;
+  }
+  /*-----carrusel---*/
+  .carousel {
     display: none;
- }
-
-    /*----MAIN DEL INDEX*/
-    .info{
-        font-size: 25px;
-        animation: none;
-    }
-
-    .contenedor {
-     
-        padding: 5px;
-      
-   }
-    .contenedor .propaganda{
-        font-size: 20px;
-        padding: 3px;
-    }
-    .contenedor .imagenes22{
-        width: 150px;
-        height: 150px;
-        top: 10px;
-        bottom: 10px;
-        margin-left: 75px;
-    }
-    /*----PREGUNTAS FRECUENTES------*/
-    .lipreguntas{
-       
-        line-height: 15px;        
-    }
-    .lipreguntas >li{
-        padding: 10px;
-    }
-    /*------------PRODUCTOS---------*/
- 
-    .h2productos{
-        font-size: 30px;
-    }
- 
+  }
+  /*---------------------MAIN DEL INDEX--------------------*/
+  .mainIndex .contenedor .info { /*TITULO H2*/
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .mainIndex .contenedor div .imagenes22 {
+    height: 125px;
+    width: 125px;
+  }
+  .mainIndex .contenedor div .propaganda {
+    font-size: 25px;
+    padding: 15px;
+  }
+  /*ESTILO PAGINA REGISTRARSE Y INISIO SECION*/
+  .iniciarSesion {
+    width: 400px;
+    padding: 20px;
+  }
+  .iniciarSesion h1 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .iniciarSesion .label {
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .iniciarSesion .controlador {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .iniciarSesion .boton {
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 15px;
+  }
+  .iniciarSesion .texto {
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  /*--------------------------------------------QUIENES SOMOS---------------------------------------------*/
+  .mainquienessomos {
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .mainquienessomos .contenedor .info {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .mainquienessomos .contenedor .p-quienesomos {
+    font-size: 20px;
+    font-weight: 150;
+    text-align: center;
+  }
+  /*-------------------------------------------PREGUNTAS FRECUENTES.------------------------------------------------*/
+  .mainpreguntasfrecuentes {
+    padding: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    line-height: 23px;
+  }
+  .mainpreguntasfrecuentes h1 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .mainpreguntasfrecuentes .preguntasfrecuentes {
+    padding: 30px;
+    line-height: 20px;
+  }
+  .mainpreguntasfrecuentes .preguntasfrecuentes .lipreguntas {
+    font-size: 20px;
+    line-height: 15px;
+    font-weight: 700;
+  }
+  .mainpreguntasfrecuentes .preguntasfrecuentes p {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  /*------------------------------------------------------------PRODUCTOS-----------------------------------------------*/
+  .mainproductos .h2productos {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .mainproductos .mainproductos {
+    max-width: 1000px;
+    padding: 12px;
+  }
+  .mainproductos .mainproductos .card {
+    margin: 20px;
+    padding: 5px;
+  }
+  .mainproductos .mainproductos .card .textoP {
+    font-size: 10px;
+    padding: 5px;
+  }
+  /*-------------------------------------------------------------FOOTER------------------------------------------------*/
+  footer {
+    text-align: center;
+    padding: 40px;
+  }
+  footer * {
+    flex: 1 100%;
+  }
+  footer h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  footer .sociales { /*div 1*/
+    margin-left: 12%;
+  }
+  footer .sociales a {
+    width: 30px;
+    height: 30px;
+  }
+  footer .sociales a i {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  footer .linea {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  footer .footer-listas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .footer-listas h5 {
+    font-size: 15px;
+  }
+  footer .footer-listas * {
+    flex: 1 20%;
+    margin-right: 0.4em;
+  }
+  footer .footer-listas .ayuda a {
+    font-size: 10px;
+  }
+  footer .footer-listas .encontranosEn a {
+    font-size: 10px;
+  }
+  footer .footer-listas .informacionLegal .box li {
+    margin-right: 4px;
+  }
+  footer .footer-listas .informacionLegal .box li img {
+    width: 15px;
+    height: 15px;
+  }
+  footer .finPagina p {
+    font-size: 10px;
+  }
 }
+
+/*# sourceMappingURL=estilo.css.map */
